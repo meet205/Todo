@@ -26,11 +26,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
 
-        {/* <Route path=""  element={<Login />} /> */}
-        {/* <Route
-          path="/todo"
-          element={<Protected Component={Todo}></Protected>}
-        /> */}
+    
         <Route
           path="/service"
           element={<Protected Component={Service}></Protected>}
