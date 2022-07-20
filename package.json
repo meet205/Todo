@@ -1,5 +1,6 @@
 {
   "name": "my-todo",
+  "homepage": "https://meet205.github.io/Todo.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,17 +26,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "json-server": "json-server --watch db.json --port 4500",
     "dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject", 
-  
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-  
-    "build": "react-scripts build && cp build/index.html build/404.html"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -54,8 +52,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
+
   }
+
 }
